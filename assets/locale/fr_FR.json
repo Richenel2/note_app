@@ -1,0 +1,20 @@
+{
+    "notes":"Notes",
+    "designed_by": "Conçu par",
+    "redesigned_by": "Redessiné par",
+    "illustrations":"illustrations",
+    "icons":"Icônes",
+    "font":"Police de caractère",
+    "made_by":"Faite par",
+    "first_note":"Créez votre première note!",
+    "search_title":"Recherche par titre",
+    "file_not_found":"Fichier introuvable. Essayez de rechercher à nouveau.",
+    "title":"Titre",
+    "type_something":"Tapez quelque chose",
+    "save_change":"Sauvegarder les modifications ?",
+    "sure_to_discard":"Êtes-vous sûr de vouloir abandonner vos modifications?",
+    "button":{
+        "save":"Enregistrer",
+        "discard":"Abandonner"
+    }
+}

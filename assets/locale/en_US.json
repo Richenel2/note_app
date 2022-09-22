@@ -1,0 +1,20 @@
+{
+    "notes":"Notes",
+    "designed_by": "Designed By",
+    "redesigned_by": "Redesigned By",
+    "illustrations":"Illustrations",
+    "icons":"Icons",
+    "font":"Font",
+    "made_by":"Made by",
+    "first_note":"Create your first note!",
+    "search_title":"Search by title",
+    "file_not_found":"File not found. Try searching again.",
+    "title":"Title",
+    "type_something":"Type something",
+    "save_change":"Save changes ?",
+    "sure_to_discard":"Are you sure you want to discard your changes?",
+    "button":{
+        "save":"Save",
+        "discard":"Discard"
+    }
+}

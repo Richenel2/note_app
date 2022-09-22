@@ -1,20 +1,15 @@
 import 'package:get/get.dart';
+import 'package:note_app/app/data/models/note_model.dart';
+import 'package:note_app/app/data/providers/note_provider.dart';
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
+  final notes = <Note>[].obs;
 
-  final count = 0.obs;
+  
   @override
   void onInit() {
     super.onInit();
+    notes.assignAll(NoteProvider.instance.readNotes);
+    ever(notes, (_) => NoteProvider.instance.writeNote(notes));
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {}
-  void increment() => count.value++;
 }
