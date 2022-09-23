@@ -23,5 +23,5 @@ extension PercentSized on double {
 }
 
 extension ResponsiveText on double {
-  double get sp => Get.width / 100 * (this / 3);
+  double get sp => Get.width / 100 * (this / 4);
 }

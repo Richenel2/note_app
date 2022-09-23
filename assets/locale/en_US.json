@@ -10,11 +10,14 @@
     "search_title":"Search by title",
     "file_not_found":"File not found. Try searching again.",
     "title":"Title",
-    "type_something":"Type something",
+    "type_something":"Type something... ",
     "save_change":"Save changes ?",
     "sure_to_discard":"Are you sure you want to discard your changes?",
+    "sure_to_delete":"Are you sure you want to delete your note?",
     "button":{
         "save":"Save",
-        "discard":"Discard"
+        "discard":"Discard",
+        "keep":"Keep",
+        "delete":"Delete"
     }
 }

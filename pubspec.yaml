@@ -10,6 +10,7 @@ dependencies:
   get: 4.6.5
   google_fonts: 3.0.1
   get_storage: 2.0.3
+  simple_rich_text: 2.0.49
   flutter: 
     sdk: flutter
 
@@ -25,6 +26,21 @@ flutter:
   fonts: 
     - family: Nunito
       fonts: 
+        - asset: assets/fonts/Nunito/Nunito-ExtraLight.ttf
+          weight: 100
+        - asset: assets/fonts/Nunito/Nunito-Light.ttf
+          weight: 200
+        - asset: assets/fonts/Nunito/Nunito-Medium.ttf
+          weight: 300
         - asset: assets/fonts/Nunito/Nunito-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Nunito/Nunito-SemiBold.ttf
+          weight: 500
+        - asset: assets/fonts/Nunito/Nunito-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/Nunito/Nunito-ExtraBold.ttf
+          weight: 700
+        - asset: assets/fonts/Nunito/Nunito-Black.ttf
+          weight: 800
   uses-material-design: true
 

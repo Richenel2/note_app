@@ -25,8 +25,11 @@ class LocaleKeys {
   static const type_something = 'type_something';
   static const save_change = 'save_change';
   static const sure_to_discard = 'sure_to_discard';
+  static const sure_to_delete = 'sure_to_delete';
   static const button_save = 'button_save';
   static const button_discard = 'button_discard';
+  static const button_keep = 'button_keep';
+  static const button_delete = 'button_delete';
 }
 
 class Locales {
@@ -42,11 +45,14 @@ class Locales {
     'search_title': 'Recherche par titre',
     'file_not_found': 'Fichier introuvable. Essayez de rechercher à nouveau.',
     'title': 'Titre',
-    'type_something': 'Tapez quelque chose',
+    'type_something': 'Tapez quelque chose...',
     'save_change': 'Sauvegarder les modifications ?',
     'sure_to_discard': 'Êtes-vous sûr de vouloir abandonner vos modifications?',
+    'sure_to_delete': 'Êtes-vous sûr de vouloir supprimer votre notes?',
     'button_save': 'Enregistrer',
     'button_discard': 'Abandonner',
+    'button_keep': 'Annuler',
+    'button_delete': 'Effacer',
   };
   static const en_US = {
     'notes': 'Notes',
@@ -60,10 +66,13 @@ class Locales {
     'search_title': 'Search by title',
     'file_not_found': 'File not found. Try searching again.',
     'title': 'Title',
-    'type_something': 'Type something',
+    'type_something': 'Type something... ',
     'save_change': 'Save changes ?',
     'sure_to_discard': 'Are you sure you want to discard your changes?',
+    'sure_to_delete': 'Are you sure you want to delete your note?',
     'button_save': 'Save',
     'button_discard': 'Discard',
+    'button_keep': 'Keep',
+    'button_delete': 'Delete',
   };
 }
