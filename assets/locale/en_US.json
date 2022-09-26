@@ -14,6 +14,7 @@
     "save_change":"Save changes ?",
     "sure_to_discard":"Are you sure you want to discard your changes?",
     "sure_to_delete":"Are you sure you want to delete your note?",
+    "change_language":"Are you sure you want to change your app language?",
     "button":{
         "save":"Save",
         "discard":"Discard",

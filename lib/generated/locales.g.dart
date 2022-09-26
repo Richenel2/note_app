@@ -26,6 +26,7 @@ class LocaleKeys {
   static const save_change = 'save_change';
   static const sure_to_discard = 'sure_to_discard';
   static const sure_to_delete = 'sure_to_delete';
+  static const change_language = 'change_language';
   static const button_save = 'button_save';
   static const button_discard = 'button_discard';
   static const button_keep = 'button_keep';
@@ -34,7 +35,7 @@ class LocaleKeys {
 
 class Locales {
   static const fr_FR = {
-    'notes': 'Notes',
+    'notes': 'Mes notes',
     'designed_by': 'Conçu par',
     'redesigned_by': 'Redessiné par',
     'illustrations': 'illustrations',
@@ -49,6 +50,8 @@ class Locales {
     'save_change': 'Sauvegarder les modifications ?',
     'sure_to_discard': 'Êtes-vous sûr de vouloir abandonner vos modifications?',
     'sure_to_delete': 'Êtes-vous sûr de vouloir supprimer votre notes?',
+    'change_language':
+        'Êtes-vous sûr de vouloir changer la langue de votre application?',
     'button_save': 'Enregistrer',
     'button_discard': 'Abandonner',
     'button_keep': 'Annuler',
@@ -70,6 +73,7 @@ class Locales {
     'save_change': 'Save changes ?',
     'sure_to_discard': 'Are you sure you want to discard your changes?',
     'sure_to_delete': 'Are you sure you want to delete your note?',
+    'change_language': 'Are you sure you want to change your app language?',
     'button_save': 'Save',
     'button_discard': 'Discard',
     'button_keep': 'Keep',

@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:note_app/app/core/design/image.dart';
+import 'package:note_app/app/core/utils/controller.dart';
+import 'package:note_app/app/core/utils/enum.dart';
+import 'package:note_app/app/core/widgets/confirm_dialog.dart';
 import 'package:note_app/app/core/widgets/icon_button.dart';
 import 'package:note_app/app/core/widgets/note_widget.dart';
 import 'package:note_app/app/modules/home/views/search_view.dart';
@@ -15,7 +18,7 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Notes'),
+        title: Text('notes'.tr),
         actions: [
           CustomIconButton(
             icon: Icon(Icons.search),
@@ -24,8 +27,23 @@ class HomeView extends GetView<HomeController> {
             },
           ),
           CustomIconButton(
-            icon: Icon(Icons.info_outline),
-            onPressed: () {},
+            icon: Icon(Icons.translate),
+            onPressed: () {
+              Get.dialog(
+                ConfirmDialog(
+                  text: "change_language".tr,
+                  onDiscard: () {},
+                  onValid: () {
+                    final ctrl = Get.find<GlobalAppController>();
+                    if (ctrl.langue == LanguageEnum.francais) {
+                      ctrl.setLanguage(["en", "US"]);
+                    } else {
+                      ctrl.setLanguage(["fr", "FR"]);
+                    }
+                  },
+                ),
+              );
+            },
           ),
         ],
       ),

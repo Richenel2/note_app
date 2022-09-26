@@ -7,6 +7,7 @@ import 'package:note_app/app/modules/view_note/controllers/view_note_controller.
 class AddNoteController extends GetxController {
   Note? lastNote;
   final newNote = Rx<Note>(Note.empty());
+  final isUpdate = false.obs;
 
   final formKey = GlobalKey<FormState>();
   final titleCtrl = TextEditingController();
@@ -20,6 +21,7 @@ class AddNoteController extends GetxController {
       newNote.value = lastNote!.copy();
       containCtrl.text = lastNote!.contain!;
       titleCtrl.text = lastNote!.title!;
+      isUpdate.value = true;
     } on NoSuchMethodError {}
   }
 

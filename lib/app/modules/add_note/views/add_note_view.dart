@@ -18,20 +18,23 @@ class AddNoteView extends GetView<AddNoteController> {
           icon: Icon(Icons.arrow_back_ios_new),
           onPressed: () {
             if (controller.isSame) {
-              Get.find<ViewNoteController>().note.value = controller.lastNote!;
+              if (controller.isUpdate.value)
+                Get.find<ViewNoteController>().note.value =
+                    controller.lastNote!;
               Get.back();
             } else {
               Get.dialog(
                 ConfirmDialog(
                   text: "sure_to_discard".tr,
                   onDiscard: () {
-                    Get.find<ViewNoteController>().note.value =
-                        controller.lastNote!;
+                    if (controller.isUpdate.value)
+                      Get.find<ViewNoteController>().note.value =
+                          controller.lastNote!;
                     controller.clear();
                     Get.back();
                   },
                   onValid: () {},
-                  validText: "keep".tr,
+                  validText: "button_keep".tr,
                 ),
               );
             }
@@ -41,9 +44,11 @@ class AddNoteView extends GetView<AddNoteController> {
           CustomIconButton(
             icon: Icon(Icons.visibility_outlined),
             onPressed: () {
-              Get.find<ViewNoteController>().note.value =
-                  controller.newNote.value;
-              Get.find<ViewNoteController>().isUpdate.value = true;
+              if (controller.isUpdate.value)
+                Get.find<ViewNoteController>().note.value =
+                    controller.newNote.value;
+              if (controller.isUpdate.value)
+                Get.find<ViewNoteController>().isUpdate.value = true;
               Get.toNamed(
                 Routes.VIEW_NOTE,
                 arguments: {"note": controller.newNote.value, "isUpdate": true},

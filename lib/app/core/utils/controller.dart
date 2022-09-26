@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:note_app/app/core/utils/enum.dart';
 import 'package:note_app/app/data/providers/preferences/provider.dart';
 
 class GlobalAppController extends GetxController {
@@ -20,5 +21,12 @@ class GlobalAppController extends GetxController {
       PreferencesProvider.instance.writeLanguage(language.toList());
       Get.updateLocale(Locale(language[0], language[1]));
     });
+  }
+
+  LanguageEnum get langue =>
+      language[0] == "fr" ? LanguageEnum.francais : LanguageEnum.anglais;
+
+  setLanguage(List<String> langue) {
+    language.value = langue;
   }
 }

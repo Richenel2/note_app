@@ -1,5 +1,5 @@
 {
-    "notes":"Notes",
+    "notes":"Mes notes",
     "designed_by": "Conçu par",
     "redesigned_by": "Redessiné par",
     "illustrations":"illustrations",
@@ -14,6 +14,7 @@
     "save_change":"Sauvegarder les modifications ?",
     "sure_to_discard":"Êtes-vous sûr de vouloir abandonner vos modifications?",
     "sure_to_delete":"Êtes-vous sûr de vouloir supprimer votre notes?",
+    "change_language":"Êtes-vous sûr de vouloir changer la langue de votre application?",
     "button":{
         "save":"Enregistrer",
         "discard":"Abandonner",

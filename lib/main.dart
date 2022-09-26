@@ -22,7 +22,10 @@ void main() async {
       getPages: AppPages.routes,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      locale: Locale("${globalController.language[0]}", "${globalController.language[1]}"),
+      locale: Locale(
+        "${globalController.language[0]}",
+        "${globalController.language[1]}",
+      ),
       translationsKeys: AppTranslation.translations,
     ),
   );
